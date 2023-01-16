@@ -38,6 +38,7 @@ mongoose
   .connect(process.env.URL_DB, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
+    dbName: "ya-bao",
   })
   .then(() =>
     app.listen(process.env.PORT, () => {
